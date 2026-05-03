@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ─── Design Tokens ───────────────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg:        #ffffff;
+  --bg-2:      #f7f7f7;
+  --bg-3:      #f0f0f0;
+
+  /* Text */
+  --text-1:    #0a0a0a;
+  --text-2:    #555555;
+  --text-3:    #999999;
+
+  /* Borders */
+  --border:    #e8e8e8;
+  --border-2:  #d0d0d0;
+
+  /* Accent — pure black */
+  --accent:    #0a0a0a;
+  --accent-bg: rgba(10, 10, 10, 0.05);
+
+  /* Typography */
+  --font: 'Inter', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+
+  /* Radii */
+  --r-sm:   6px;
+  --r-md:   10px;
+  --r-lg:   16px;
+  --r-full: 9999px;
+
+  /* Nav */
+  --nav-top: 24px;
+  --nav-h: 80px;
+}
+
+@media (max-width: 960px) {
+  :root {
+    --nav-top: 14px;
+    --nav-h: 72px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --nav-top: 12px;
+    --nav-h: 68px;
+  }
+}
+
+/* ─── Reset ───────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text-1);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a      { text-decoration: none; color: inherit; }
+ul     { list-style: none; }
+img    { display: block; max-width: 100%; }
+button { font-family: var(--font); cursor: pointer; border: none; outline: none; background: none; }
+
+/* ─── Scrollbar ───────────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: var(--r-full); }
+::-webkit-scrollbar-thumb:hover { background: var(--text-2); }
+
+::selection { background: rgba(10, 10, 10, 0.12); color: var(--text-1); }
+
+/* ─── Root ────────────────────────────────────────────────────────── */
+#root { min-height: 100vh; }
