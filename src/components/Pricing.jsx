@@ -9,7 +9,7 @@ const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_TEXT}`;
 const PRICING_PLANS = [
   {
     name: 'Basic',
-    price: '₹999',
+    price: '₹1999',
     description: 'Simple website',
     paymentLabel: 'Single Payment',
     tone: 'basic',
@@ -17,7 +17,7 @@ const PRICING_PLANS = [
   },
   {
     name: 'Standard',
-    price: '₹2999',
+    price: '₹4999',
     description: 'Business website',
     paymentLabel: 'Single Payment',
     tone: 'standard',
@@ -26,7 +26,7 @@ const PRICING_PLANS = [
   },
   {
     name: 'Premium',
-    price: '₹6999+',
+    price: '₹9999+',
     description: 'Web apps / advanced features',
     paymentLabel: 'Custom Scope',
     tone: 'premium',
