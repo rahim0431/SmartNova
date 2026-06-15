@@ -5,7 +5,7 @@ const BUSINESS_PHONE = '919342542389';
 const CONTACT_EMAIL = 'smartnova718@gmail.com';
 const CONTACT_FORM_ENDPOINT = import.meta.env.VITE_CONTACT_FORM_ENDPOINT || 'https://formspree.io/f/mrejbrak';
 const SOCIAL_IDS = {
-  instagram: 'rahim.0431',
+  instagram: 'smartnova.dev',
   x: 'smartnova718',
   linkedin: 'rahim0431',
 };

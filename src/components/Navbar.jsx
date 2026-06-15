@@ -73,9 +73,7 @@ const Navbar = () => {
             onClick={() => goto('home')}
             aria-label="Back to top"
           >
-            <div className="navbar__logo-text">
-              <span className="navbar__logo-name">SmartNova</span>
-            </div>
+            <img src="/Logo.svg" alt="SmartNova Logo" className="navbar__logo-image" />
           </button>
 
           {/* Desktop links */}
